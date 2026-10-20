@@ -1,5 +1,4 @@
-repeat
-	task.wait()
+task.wait()
 until game:IsLoaded()
 
 local tbl
@@ -415,7 +414,7 @@ local function fn2()
 				textLabel.TextSize = 13
 				textLabel.TextColor3 = Color3.fromRGB(0, 255, 127)
 				textLabel.TextXAlignment = Enum.TextXAlignment.Left
-				textLabel.Text = "? SPEED HUB X - DEBUG INSPECTOR"
+				textLabel.Text = "? its.alex.x7 - DEBUG INSPECTOR"
 				textLabel.Parent = frame
 				local textLabel2 = Instance.new("TextLabel")
 				textLabel2.Name = "StatsLabel"
@@ -9755,9 +9754,9 @@ local function fn2()
 					end
 				end)
 
-				local tbl7 = { username = "Speed Hub X" }
+				local tbl7 = { username = "its.alex.x7 }
 				local embeds = {}
-				local tbl8 = { title = "**Speed Hub X | Egg Successfully Stolen**", type = "rich", color = n }
+				local tbl8 = { title = "**its.alex.x7 | Egg Successfully Stolen**", type = "rich", color = n }
 				local fields = {}
 				local tbl9 = { name = "** -> Profile : ** \n", value = "> Username : || " .. localPlayer.Name .. " ||", inline = false }
 
@@ -9773,12 +9772,12 @@ local function fn2()
 				tbl8.fields = fields
 
 				tbl8.thumbnail = {
-					url = "https://cdn.discordapp.com/attachments/1386384052197527602/1538148901868019712/2130c04f38ddf3049b5b24a2d73971f5.png?ex=6a81a04b&is=6a804ecb&hm=05b7e14a3b99f37e87fdacdb879654cdcd62916b90e9a47ad0e46e43b6d28717&",
+					url = "https://cdn.discordapp.com/attachments/1548536628006363149/1562146055364153474/file_0000000092a08210b8a2e45f51c9e4a6.png?ex=6ad8ed62&is=6ad79be2&hm=150bd08c529ccd5dbf4cf50b0199d28c374f57aac4976e0988bc71e3c6a68ef9&",
 				}
 
 				tbl8.footer = {
-					text = "Speed Hub X - Steal An Egg",
-					icon_url = "https://cdn.discordapp.com/attachments/1386384052197527602/1538148901868019712/2130c04f38ddf3049b5b24a2d73971f5.png?ex=6a81a04b&is=6a804ecb&hm=05b7e14a3b99f37e87fdacdb879654cdcd62916b90e9a47ad0e46e43b6d28717&",
+					text = "Its.alex.x7",
+					icon_url = "https://cdn.discordapp.com/attachments/1548536628006363149/1562146055364153474/file_0000000092a08210b8a2e45f51c9e4a6.png?ex=6ad8ed62&is=6ad79be2&hm=150bd08c529ccd5dbf4cf50b0199d28c374f57aac4976e0988bc71e3c6a68ef9&",
 				}
 
 				tbl8.timestamp = DateTime.now():ToIsoDate()
@@ -13635,6 +13634,7 @@ local function fn2()
 			"10 - Divine",
 			"11 - Titan",
 			"12 - Light & Dark",
+      "13 - Enchanted Forest",
 		}
 
 		local tbl10 = {}
@@ -13857,6 +13857,7 @@ local function fn2()
 				["light & dark"] = 12,
 				lightdark = 12,
 				["light and dark"] = 12,
+        ["Enchanted Forest"] =13
 			})[string.lower(str)] or 0
 		end
 
@@ -14178,6 +14179,7 @@ local function fn2()
 			"10 - Divine",
 			"11 - Titan",
 			"12 - Light & Dark",
+      "13 - "Enchanted Forest",
 		}, { "All" }, true, function(arg)
 			if type(arg) == "table" then
 				arg = arg[1] or arg.Value or arg.Title or arg.Text
@@ -14214,7 +14216,7 @@ local function fn2()
 		end)
 
 		funcs:Button(tbl5.Settings:AddSection("Reset Config"), "Reset Script Config", "", function()
-			for _, v25 in next, { "Speed_Hub", "SpeedHubX", "Speed Hub X", "Speed Hub", "Speed_Hub_X" }, nil do
+			for _, v25 in next, { "Speed_Hub", "SpeedHubX", "Speed Hub X", "Its.alex.x7", "Speed_Hub_X" }, nil do
 				if isfolder(v25) then
 					delfolder(v25)
 				end
@@ -14799,9 +14801,9 @@ tbl2 = {
 	Script_ID = "570e906c9c01e841f979d51152994c52",
 	Load = function(scriptKey)
 		script_key = scriptKey
-		getfenv(0).script_key = scriptKey
-		getfenv(1).script_key = scriptKey
-		getgenv().script_key = scriptKey
+		getfenv(0).script_key = "KEYLESS"
+		getfenv(1).script_key = "KEYLESS"
+		getgenv().script_key = "KEYLESS"
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/" .. tbl2.Script_ID .. ".lua"))()
 	end,
 	MathFloor = function(arg, arg2)
@@ -14899,16 +14901,6 @@ tbl2 = {
 
 		return tbl2:Concat(tbl5)
 	end,
-	NFyuXkNUFXqYueWyGPjhCrcMgiLMPNhLzAttSCFVWanYbrDSBKmCXghuwYgwPrqAGFcTnQcKiQvMXtLRkZAGdKNUgUHKrPqZaqYh = function()
-		local ok, result = pcall(request, {
-			Url = "https://raw.githubusercontent.com/AhmadV99/Main/refs/heads/main/Library/Key%20System/Encrypted",
-			Method = "GET",
-		})
-
-		if not ok or not result then
-			return false
-		end
-
 		if result.Body:find("$", 1, true) then
 			return true
 		end
@@ -14938,7 +14930,6 @@ tbl2 = {
 		end
 		return false
 	end,
-	KqNajmBbtvaSwVktmdHAUSLHdbErNkfYxZJMxUydYMvhPKHBLCHBbjSCBjECVRFqyjGqzPGfgncLXRhtxCBeLrArAgVUxUhfnSWF = function()
 		return os.date("*t").wday == 7
 	end,
 	JSONDecode = function(arg, arg2)
@@ -15003,9 +14994,6 @@ if script_key and type(script_key) == "string" then
 	end
 end
 
-local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Main/refs/heads/main/Library/KeySystemV2.5.lua"))()
-local lib2 = loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Main/refs/heads/main/Library/Key%20System/Get%20Key%20API.lua"))()
-
 local v6 = lib.Load({
 	Name = "Speed Hub X",
 	Icon = 136890595976124,
@@ -15021,70 +15009,5 @@ local v6 = lib.Load({
 			delay(0.5, function()
 				lib.Notify({ Title = "Loading script", Icon = 14939512891, Time = 5, Color = Color3.fromRGB(0, 255, 81) })
 			end)
-
-			delay(1.5, function()
-				lib.DestroyUI()
-			end)
-
-			pcall(writefile, "SpeedHubX_Key.txt", str)
-			task.spawn(fn2)
-			task.spawn(tbl2.Load, str)
-		elseif v6.code == "KEY_HWID_LOCKED" then
-			lib.Notify({
-				Title = "Key linked to a different HWID. Please reset it using our bot, join discord.gg/speedhubx !",
-				Icon = 14943813832,
-				Time = 5,
-				Color = Color3.fromRGB(255, 37, 17),
-			})
-		elseif v6.code == "KEY_EXPIRED" then
-			lib.Notify({
-				Title = "The Provided Key has expired.",
-				Icon = 14943813832,
-				Time = 5,
-				Color = Color3.fromRGB(240, 192, 96),
-			})
-		elseif v6.code == "KEY_BANNED" then
-			lib.Notify({
-				Title = "The Provided Key is banned.",
-				Icon = 14943813832,
-				Time = 5,
-				Color = Color3.fromRGB(255, 37, 17),
-			})
-		elseif v6.code == "INVALID_EXECUTOR" then
-			lib.Notify({
-				Title = "your Executor is not supported",
-				Icon = 14943813832,
-				Time = 5,
-				Color = Color3.fromRGB(255, 37, 17),
-			})
-		elseif v6.code == "KEY_INCORRECT" then
-			lib.Notify({
-				Title = "The Provided Key is incorrect / it does not exist.",
-				Icon = 14943813832,
-				Time = 5,
-				Color = Color3.fromRGB(255, 37, 17),
-			})
-		elseif v6.code == "KEY_INVALID" then
-			lib.Notify({
-				Title = "The Provided Key is in an invalid format.",
-				Icon = 14943813832,
-				Time = 5,
-				Color = Color3.fromRGB(255, 37, 17),
-			})
-		end
-	end,
-})
-
-for k, v7 in next, lib2[game.GameId], nil do
-	v6.New({
-		Title = k,
-		Icon = v7.Icon,
-		Callback = function()
-			pcall(setclipboard, v7.Url)
-			lib.Notify({ Title = "Copied Get Key " .. k .. " Link", Icon = 14939475472, Time = 5 })
-		end,
-	})
-end
-
-v6.Explain("Keyless will be enabled every weekend.")
+v6.Explain("Keyless will be enabled every hey noob i'm owner of this script lol. my request is to Bypass this script Facking.)
 
